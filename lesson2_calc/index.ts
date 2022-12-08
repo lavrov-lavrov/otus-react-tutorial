@@ -10,7 +10,7 @@ const question = (): Promise<null> =>
   new Promise((resolve) => {
     rl.question("type > ", (answer: string) => {
       // const result = runner(answer);
-      const result = '';
+      const result = 123;
 
       if (result) {
         console.log(`Result: ${result}`);

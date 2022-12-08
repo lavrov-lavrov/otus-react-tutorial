@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "calc": "npx ts-node lesson2_calc/index.ts",
+    "calc": "npx ts-node-esm lesson2_calc/index.ts",
     "test": "jest",
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
