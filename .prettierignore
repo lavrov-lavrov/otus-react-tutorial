@@ -1,0 +1,7 @@
+
+#ignore this:
+.idea
+lib
+node_modules
+.eslintignore
+.gitignore
