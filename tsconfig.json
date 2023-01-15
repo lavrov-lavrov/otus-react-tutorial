@@ -5,12 +5,16 @@
     "module": "es6",
     "target": "es5",
     "allowJs": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "strict": true,
   },
-  "files": ["src/index.ts", "lesson2_calc/index.ts"],
+  "files": ["src/index.ts", "lesson2_calc/index.ts", "lesson2_calc/calculate.ts"],
   "include": [
     "src/**/*",
-    "lesson2_calc/**/*",
+    "lesson2_calc/*",
   ],
   "exclude": [
     "node_modules"

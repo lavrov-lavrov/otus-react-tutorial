@@ -1,6 +1,10 @@
 
 import { createInterface } from 'readline';
 
+// @ts-ignore
+import { calculate } from './calculate.ts';
+
+
 const rl = createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -8,12 +12,11 @@ const rl = createInterface({
 
 const question = (): Promise<null> =>
   new Promise((resolve) => {
-    rl.question("type > ", (answer: string) => {
-      // const result = runner(answer);
-      const result = 123;
+    rl.question("введите выражение (через пробелы) >>> ", (answer: string) => {
+      const result = calculate(answer);
 
       if (result) {
-        console.log(`Result: ${result}`);
+        console.log(`Результат: ${result}`);
       }
 
       resolve(null);
